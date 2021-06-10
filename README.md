@@ -14,3 +14,5 @@ Primarily by using a Content Management System (CMS) such as Batflat, you are ab
 
 
 ## Where can I get more help, if I need it?
+You could contact me through email, 22000240@handong.edu in order to inquire more about the project or Batflat.
+Also, you could see the original github repository for github which contains batflat at: https://github.com/sruupl/batflat
