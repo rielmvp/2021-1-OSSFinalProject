@@ -255,6 +255,7 @@
         var credit_sum = 0;
         var required_credits = 33;
         var wgpa_sum = 0;
+        var final_gpa = 0;
       
         for(var i in final_point_list){
           final_point_sum += Number(final_point_list[i]);
@@ -277,7 +278,9 @@
         msg = msg.concat( "Total ", Number(credit_sum), " out of " + Number(required_credits) ) ;
         document.getElementById('current_score').innerHTML = msg ;
         //modified
-        msg = "Final GPA: " + Number(wgpa_sum)/Number(credit_sum) + " / 4.5";
+        final_gpa = Number(wgpa_sum)/Number(credit_sum);
+        //modified
+        msg = "Final GPA: " + final_gpa.toFixed() + " / 4.5";
         document.getElementById('expected').innerHTML = msg ;
 
     })
