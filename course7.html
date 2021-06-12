@@ -216,7 +216,7 @@
     var course_list = [];
     var ratio_list = [];
     var final_point_list = [];
-    var credit_list = []
+    var credit_list = [];
 
     db.collection('course_list').orderBy('id').get().then((snapshot) => {
       let changes = snapshot.docChanges();
@@ -259,7 +259,7 @@
           ratio_sum += Number(ratio_list[j]);
         }
         for(var k in credit_list){
-          credit_sum += Number(credit_sum[k]);
+          credit_sum += Number(credit_list[k]);
         }
         final_point_sum = Math.ceil(final_point_sum) ;
         var expected = (100 - Number(ratio_sum)) + Number(final_point_sum) ;
