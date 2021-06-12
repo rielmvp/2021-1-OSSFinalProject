@@ -50,4 +50,3 @@ $ $ sudo systemctl restart nginx.service
 5) Open a web browser and go to http://raspberrypi.local/ (or use <ip address of your server/Raspberry Pi> if it doesn't work). It will result in a default Batflat display!
 
 6) To log on as an admin and start editing your website, go to http://raspberrypi.local/admin and log in using ID/PW: admin/admin
-7) 
