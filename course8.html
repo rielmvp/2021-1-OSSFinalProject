@@ -217,6 +217,7 @@
     var final_point_list = [];
     //modified
     var credit_list = [];
+    var gpa_list = [];
       
     db.collection('course_list').orderBy('id').get().then((snapshot) => {
       let changes = snapshot.docChanges();
@@ -245,6 +246,7 @@
           final_point_list.push(change.doc.data().final_point) ;
           //modified
           credit_list.push(change.doc.data().my_point);
+          gpa_list.push(change.doc.data().ratio);
         })
         var final_point_sum = 0 ;
         var ratio_sum = 0 ;
@@ -252,6 +254,7 @@
         //modified
         var credit_sum = 0;
         var required_credits = 33;
+        var wgpa_sum = 0;
       
         for(var i in final_point_list){
           final_point_sum += Number(final_point_list[i]);
@@ -263,6 +266,10 @@
         for(var k in credit_list){
           credit_sum += Number(credit_list[k]);
         }
+        //modified
+        for(var l in gpa_list){
+          wgpa_sum = Number(credit_list[l]) * Number(gpa_list[l]);
+        }
         final_point_sum = Math.ceil(final_point_sum) ;
         var expected = (100 - Number(ratio_sum)) + Number(final_point_sum) ;
         var msg = '';
@@ -270,7 +277,7 @@
         msg = msg.concat( "Total ", Number(credit_sum), " out of " + Number(required_credits) ) ;
         document.getElementById('current_score').innerHTML = msg ;
         //modified
-        msg = "Final GPA: " + Number(expected) + " / 100";
+        msg = "Final GPA: " + Number(wgpa_sum)/Number(credit_sum) + " / 4.5";
         document.getElementById('expected').innerHTML = msg ;
 
     })
