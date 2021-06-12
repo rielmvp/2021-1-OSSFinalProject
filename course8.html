@@ -244,7 +244,11 @@
         })
         var final_point_sum = 0 ;
         var ratio_sum = 0 ;
-
+  
+      
+        //modified
+        var required_credits = 33;
+      
         for(var i in final_point_list){
           final_point_sum += Number(final_point_list[i]);
         }
@@ -254,12 +258,12 @@
         final_point_sum = Math.ceil(final_point_sum) ;
         var expected = (100 - Number(ratio_sum)) + Number(final_point_sum) ;
         var msg = '';
-        msg = msg.concat( "Total ", Number(final_point_sum), " out of " + Number(ratio_sum) ) ;
+        msg = msg.concat( "Total ", Number(final_point_sum), " out of " + Number(required_credits) ) ;
         document.getElementById('current_score').innerHTML = msg ;
         msg = "Expected: " + Number(expected) + " / 100";
         document.getElementById('expected').innerHTML = msg ;
 
-
+        //modified
     })
 
     db.collection('course8').orderBy('name').get().then((snapshot) => {
