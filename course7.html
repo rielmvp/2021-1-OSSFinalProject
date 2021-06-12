@@ -208,6 +208,7 @@
       firebase.analytics();
     const db = firebase.firestore();  
 
+//modified
     var grid, dialog;
     var data = [];
     var nextID = 0;
@@ -215,14 +216,14 @@
     var course_list = [];
     var ratio_list = [];
     var final_point_list = [];
-    
+    var credit_list = []
 
     db.collection('course_list').orderBy('id').get().then((snapshot) => {
       let changes = snapshot.docChanges();
         changes.forEach(change => {
             course_list.push( change.doc.data().name );
         })
-        course_name = course_list[0] ;
+        course_name = course_list[7] ;
         document.getElementById('title').innerHTML = course_name ;
         document.getElementById('c1').innerHTML = course_list[0] ;
         document.getElementById('c2').innerHTML = course_list[1] ;
@@ -236,30 +237,39 @@
 
     })
 
+      
     db.collection('course7').orderBy('name').get().then((snapshot) => {
       let changes = snapshot.docChanges();
         changes.forEach(change => {
           ratio_list.push(change.doc.data().ratio);
           final_point_list.push(change.doc.data().final_point) ;
+          credit_list.push(change.doc.data().my_point;
         })
         var final_point_sum = 0 ;
         var ratio_sum = 0 ;
-
+        var credit_sum = 0;
+      
+        
+        var required_credits = 33;
+      
         for(var i in final_point_list){
           final_point_sum += Number(final_point_list[i]);
         }
         for(var j in ratio_list){
           ratio_sum += Number(ratio_list[j]);
         }
+        for(var k in credit_list){
+          credit_sum += Number(credit_sum[k]);
+        }
         final_point_sum = Math.ceil(final_point_sum) ;
         var expected = (100 - Number(ratio_sum)) + Number(final_point_sum) ;
         var msg = '';
-        msg = msg.concat( "Total ", Number(final_point_sum), " out of " + Number(ratio_sum) ) ;
+        msg = msg.concat( "Total ", Number(credit_sum), " out of " + Number(required_credits) ) ;
         document.getElementById('current_score').innerHTML = msg ;
         msg = "Expected: " + Number(expected) + " / 100";
         document.getElementById('expected').innerHTML = msg ;
 
-
+        //modified
     })
 
     db.collection('course7').orderBy('name').get().then((snapshot) => {
