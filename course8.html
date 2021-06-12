@@ -216,7 +216,7 @@
     var course_list = [];
     var ratio_list = [];
     var final_point_list = [];
-    var credit_list = []
+    var credit_list = [];
 
     db.collection('course_list').orderBy('id').get().then((snapshot) => {
       let changes = snapshot.docChanges();
