@@ -29,7 +29,7 @@ Most of what I did was changing the code to match my pictures. I also changed al
 ![credit](/img/credit.png "credit")
 ![main](/img/main.png "main")
 
-Finally, you could implement a kind of blog for your website, and you could do this by checking the Blog tab and adding new posts. You could see some example setting for the bleg and posts below:
+Finally, you could implement a kind of blog for your website, and you could do this by checking the Blog tab and adding new posts. You could see some example setting for the blog and posts below:
 
 ![blog_edit](/img/blog_edit.png "blog_edit")
 ![blog_check](/img/blog_check.png "blog_check")
