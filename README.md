@@ -38,7 +38,7 @@ On top of that, I also implemented a Credit Checker software feature for my Comp
 1) Changing it to a credit checker which only checks the credit section for a certain major
 2) Having it print out the final WEIGHTED GPA as the average of all individual courses' GPA
 
-## __Credit Checker__
+### Credit Checker
 For my Credit Checker implementation, you could open my creditchecker branch and view it. I was able to use this software feature while simultaneously having Batflat on at the same time by hosting the Credit Checker using Github Pages instead.
 
 ## Where can I get more help, if I need it?
