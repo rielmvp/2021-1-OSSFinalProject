@@ -1,6 +1,8 @@
 22000240 Gabriel Manalu
 # 2021-1-OSSFinalProject: Complete Web Guide for IT Major in HGU
 
+## DEMO VIDEO:
+
 ## What does the Complete Web Guide for IT Major in HGU do?
 As its name implies, this project provides a complete guide on what the Information Technology (IT) major is and all about it in HGU, via website. It provides all the basic information on the IT major and how you can take it in HGU. The information is spread into four main pages: __1)__ a blog-like page where you can read about certain articles related to the Information Technology major, __2)__ a page that explains what the Information Technology major is and how it is seen globally, __3)__ a page that introduces and explains the Information Technology major in HGU and its path and courses, and finally __4)__ a credit checker for a certain number of credits taken in the IT major.
 
