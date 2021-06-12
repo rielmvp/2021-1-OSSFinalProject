@@ -39,7 +39,7 @@ $ sudo chown -R www-data:www-data /var/www/html/batflat/
 $ sudo chmod -R 755 /var/www/html/batflat/
 
 3) Configure Nginx Batflat site by adding a certain file batflat into /etc/nginx/sites-available
-->You can do this by runnning "$ sudo vim /etc/nginx/sites-available/batflat" and copying all the information in the batflat file in my repository into the batflat file you are adding into nginx
-->Or you can just copy the batflat file in my repository and move it into /etc/nginx/sites-available
-!However, in line
+\->You can do this by runnning "$ sudo vim /etc/nginx/sites-available/batflat" and copying all the information in the batflat file in my repository into the batflat file you are adding into nginx
+\->Or you can just copy the batflat file in my repository and move it into /etc/nginx/sites-available
+\!However, in line
 
