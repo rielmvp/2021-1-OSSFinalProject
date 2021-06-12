@@ -29,6 +29,7 @@
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">Credit Checker  </div>
+      <!--modified-->
       <p>&nbsp&nbsp&nbsp&nbsp&nbspTrack List</p>
 
       <div class="list-group list-group-flush">
@@ -242,7 +243,6 @@
 
 
     })
-
       
     db.collection('course8').orderBy('name').get().then((snapshot) => {
       let changes = snapshot.docChanges();
