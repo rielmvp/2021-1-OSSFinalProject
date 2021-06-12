@@ -11,11 +11,35 @@ $ sudo service nginx start
 
 3)Go to /var/www/html 
 $ cd /var/www/html
-Install vim
+
+4)Install vim
 – $ sudo apt-get install vim
 » Press y and enter
-Create a file “index.html” under /var/www/html
+
+5)Create a file “index.html” under /var/www/html
 – $ sudo vim index.html
 
-## Enabling Batflat by using nginx
+## Necessary PHP setup
+
+1)Install PHP 7.2 and Related Modules by entering this command on the terminal
+$ sudo apt install php7.2-fpm php7.2-common php7.2-mbstring php7.2-xmlrpc php7.2-sqlite3 php7.2-soap php7.2-gd php7.2-xml php7.2-cli php7.2-curl php7.2-zip
+
+2) Restart nginx by entering this command on the terminal
+$ sudo systemctl restart nginx.service
+
+## Downloading and setting up Batflat
+
+1) Download Batflat's latest release by entering the following commands
+$ cd /tmp
+$ wget https://github.com/sruupl/batflat/archive/master.zip  $ unzip master.zip
+$ sudo mv batflat-master /var/www/html/batflat
+
+2) Run the commands below to set the correct permissions for Batflat to adjust the directory permissions
+$ sudo chown -R www-data:www-data /var/www/html/batflat/ 
+$ sudo chmod -R 755 /var/www/html/batflat/
+
+3) Configure Nginx Batflat site by adding a certain file batflat into /etc/nginx/sites-available
+->You can do this by runnning "$ sudo vim /etc/nginx/sites-available/batflat" and copying all the information in the batflat file in my repository into the batflat file you are adding into nginx
+->Or you can just copy the batflat file in my repository and move it into /etc/nginx/sites-available
+!However, in line
 
