@@ -12,12 +12,24 @@ Since there is not much exposure to the information on the IT major in HGU, I be
 Primarily by using a Content Management System (CMS) such as Batflat, you are able to create a similar website step by step. Firstly, it is preferred that you should have an ssh server (such as through Raspberry Pi) available. Then you need to setup nginx (an open-source-software used for web servers) in your ssh server. You also need to install PHP 7.2 and related modules. Then after downloading Batflat's latest release, simply fork this repository and its source codes and files (which will be useful even later) so that you will be able to configure nginx batflat site. To do this, insert the file "batflat" into "/etc/nginx/sites-available" directory. Finally, link this into the sites-enabled directory by running the command "sudo ln -s /etc/nginx/sites-available/batflat /etc/nginx/sites-enabled/" in the root directory and restart nginx. __Then, Batflat is up and running! (even though it looks like a default empty blog)__.
 
 In order to modify your website as I did, you need to first figure out how to use Batflat properly. You can do this extensively reading the documentation at https://batflat.org/. Also, when you logged in as an admin in order to edit your websites, you need to check the Modules tab in order to see all modules that are used in your Batflat. You could also add your own modules or improvise the modules.
+
 ![module](/img/module.png "module")
 
+Then, you can edit and modify pages in the Pages tab as follows, made intuitively easy by the Batflat layout. One interesting detail to notice here is the template that you are using. This will be the template/theme that you will use for each page (you can see that for each page I used the template index.html).
 
+![pages](/img/pages.png "pages")
 
+The intricate part of Batflat, then, is modifying the theme (or collection of templates) of each page. This is where you will modify the HTML code to your liking. You will need to choose a theme, set it as active, and then edit it (in my case I chose the BatBlog). You can see that for each theme, there is a list of templates you can modify (whether it's the overall template of the page, or the header, footer, sidebar of the page). Here is where I made most of my adjustments and modifications to get the resulting website that I have now. 
 
+![theme](/img/theme.png "theme")
+![theme_edit](/img/theme_edit.png "theme_edit")
 
+Most of what I did was changing the code to match my pictures. I also changed all the default pages and their descriptions to fit my final project (such as adding credit links and updating information on main pages).
+
+Finally, you could implement a kind of blog for your website, and you could do this by checking the Blog tab and adding new posts. You could see some example setting for the bleg and posts below:
+
+![blog_edit](/img/blog_edit.png "blog_edit")
+![blog_check](/img/blog_check.png "blog_check")
 
 ## Where can I get more help, if I need it?
 You could contact me through email, 22000240@handong.edu in order to inquire more about the project or Batflat.
