@@ -1,4 +1,4 @@
-#Setting up nginx for your ssh server (specifically Raspberry Pi)
+# Setting up nginx for your ssh server (specifically Raspberry Pi)
 
 1)On the terminal enter the following commands
 $ sudo apt-get update
@@ -17,5 +17,5 @@ Install vim
 Create a file “index.html” under /var/www/html
 – $ sudo vim index.html
 
-#Enabling Batflat by using nginx
+# Enabling Batflat by using nginx
 
