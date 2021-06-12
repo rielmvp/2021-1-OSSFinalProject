@@ -308,11 +308,15 @@
           dataSource: data,
           columns: [
             { field: 'ID', hidden: true},
-            { field: 'name', title: 'Score name', sortable: true },
-            { field: 'full_point', title: 'Full score', sortable: false },
-            { field: 'my_point', title: 'My score', sortable: false },
-            { field: 'ratio', title: 'Percentage', sortable: false },
-            { field: 'final_point', title: 'Final score', sortable: false },
+            //modified
+            { field: 'name', title: 'Course name', sortable: true },
+            //modified
+            { field: 'full_point', title: 'Full credit', sortable: false },
+            //modified
+            { field: 'my_point', title: 'Credits gained', sortable: false },
+            //modified
+            { field: 'ratio', title: 'GPA gained', sortable: false },
+            //{ field: 'final_point', title: 'Final score', sortable: false },
             { width: 64, tmpl: '<span class="material-icons gj-cursor-pointer">edit</span>', align: 'center', events: { 'click': Edit } },
             { width: 64, tmpl: '<span class="material-icons gj-cursor-pointer">delete</span>', align: 'center', events: { 'click': Delete } }
           ],
