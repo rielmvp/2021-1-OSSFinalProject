@@ -41,5 +41,13 @@ $ sudo chmod -R 755 /var/www/html/batflat/
 3) Configure Nginx Batflat site by adding a certain file batflat into /etc/nginx/sites-available\
 ->You can do this by runnning "$ sudo vim /etc/nginx/sites-available/batflat" and copying all the information in the batflat file in my repository into the batflat file you are adding into nginx\
 ->Or you can just copy the batflat file in my repository and move it into /etc/nginx/sites-available\
-!However, in line
+!However, in line 4 in the part "server_name raspberrypi.local;", change raspberrypi.local into <ip address of your server/Raspberry Pi> if it doesn't work
 
+4) Enable Batflat and restart nginx
+$ sudo ln -s /etc/nginx/sites-available/batflat /etc/nginx/sites-enabled/
+$ $ sudo systemctl restart nginx.service
+
+5) Open a web browser and go to http://raspberrypi.local/ (or use <ip address of your server/Raspberry Pi> if it doesn't work). It will result in a default Batflat display!
+
+6) To log on as an admin and start editing your website, go to http://raspberrypi.local/admin and log in using ID/PW: admin/admin
+7) 
