@@ -268,7 +268,7 @@
         }
         //modified
         for(var l in gpa_list){
-          wgpa_sum += (Number(credit_list[l]) * Number(gpa_list[l]));
+          wgpa_sum = wgpa_sum + (Number(credit_list[l]) * Number(gpa_list[l]));
         }
         final_point_sum = Math.ceil(final_point_sum) ;
         var expected = (100 - Number(ratio_sum)) + Number(final_point_sum) ;
