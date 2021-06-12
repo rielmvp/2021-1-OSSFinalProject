@@ -34,6 +34,8 @@ Finally, you could implement a kind of blog for your website, and you could do t
 ![blog_edit](/img/blog_edit.png "blog_edit")
 ![blog_check](/img/blog_check.png "blog_check")
 
+On top of that, I also implemented a Credit Checker software feature for my Complete IT Web Guide. I was able to do this by forking a certain software, which is the Grade Tracker, found here at 
+
 ## Where can I get more help, if I need it?
 You could contact me through email, 22000240@handong.edu in order to inquire more about the project or Batflat.
 Also, you could see the original github repository for github which contains batflat at: https://github.com/sruupl/batflat
