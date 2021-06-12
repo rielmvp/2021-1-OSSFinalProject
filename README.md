@@ -26,6 +26,9 @@ The intricate part of Batflat, then, is modifying the theme (or collection of te
 
 Most of what I did was changing the code to match my pictures. I also changed all the default pages and their descriptions to fit my final project (such as adding credit links and updating information on main pages).
 
+![credit](/img/credit.png "credit")
+![main](/img/main.png "main")
+
 Finally, you could implement a kind of blog for your website, and you could do this by checking the Blog tab and adding new posts. You could see some example setting for the bleg and posts below:
 
 ![blog_edit](/img/blog_edit.png "blog_edit")
