@@ -1,7 +1,7 @@
-## Pull request description\
+## Pull request description
 Clearly and concisely describe why you would like to open this pull request.
 
-##Root cause\
+## Root cause
 If there was a problem, briefly describe the root cause and analysis of the problem
 
 #Solution/improvement description\
