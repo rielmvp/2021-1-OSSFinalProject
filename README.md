@@ -12,6 +12,9 @@ Since there is not much exposure to the information on the IT major in HGU, I be
 Primarily by using a Content Management System (CMS) such as Batflat, you are able to create a similar website step by step. Firstly, it is preferred that you should have an ssh server (such as through Raspberry Pi) available. Then you need to setup nginx (an open-source-software used for web servers) in your ssh server. You also need to install PHP 7.2 and related modules. Then after downloading Batflat's latest release, simply fork this repository and its source codes and files (which will be useful even later) so that you will be able to configure nginx batflat site. To do this, insert the file "batflat" into "/etc/nginx/sites-available" directory. Finally, link this into the sites-enabled directory by running the command "sudo ln -s /etc/nginx/sites-available/batflat /etc/nginx/sites-enabled/" in the root directory and restart nginx. __Then, Batflat is up and running! (even though it looks like a default empty blog)__.
 
 In order to modify your website as I did, you need to first figure out how to use Batflat properly. You can do this extensively reading the documentation at https://batflat.org/. Also, when you logged in as an admin in order to edit your websites, you need to check the Modules tab in order to see all modules that are used in your Batflat. You could also add your own modules or improvise the modules.
+![module](/img/module.png "module")
+
+
 
 
 
