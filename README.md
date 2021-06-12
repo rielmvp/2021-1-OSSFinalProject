@@ -34,7 +34,9 @@ Finally, you could implement a kind of blog for your website, and you could do t
 ![blog_edit](/img/blog_edit.png "blog_edit")
 ![blog_check](/img/blog_check.png "blog_check")
 
-On top of that, I also implemented a Credit Checker software feature for my Complete IT Web Guide. I was able to do this by forking a certain software, which is the Grade Tracker, found here at 
+On top of that, I also implemented a Credit Checker software feature for my Complete IT Web Guide. I was able to do this by forking a certain software, which is the Grade Tracker, found here at https://github.com/goodtaeeun/OSS_final_project. I used the base and roughly kept the same layout however I modified the code by:
+1) Changing it to a credit checker which only checks the credit section for a certain major
+2) Having it print out the final WEIGHTED GPA as the average of all individual courses' GPA
 
 ## Where can I get more help, if I need it?
 You could contact me through email, 22000240@handong.edu in order to inquire more about the project or Batflat.
