@@ -12,7 +12,7 @@ By using firebase as a database and using some tools to enable use of javascript
 It would be great to see the original repository by goodtaeun at: https://github.com/goodtaeeun/OSS_final_project
 
 # How does it work?
-For detailed explanation on how the Credit Checker works, please see the video: https://youtu.be/S4B8KMtQXcQ
+For detailed explanation on how the Credit Checker works, please see the video: https://youtu.be/ku6lpFRxi6c
 
 # Where can I get more help, if I need it?
 You could contact me through email, 22000240@handong.edu in order to inquire more about the project or Batflat. Also, you could see the original github repository for github which contains batflat at: https://github.com/sruupl/batflat.
